@@ -1,0 +1,82 @@
+[
+   {
+      "topic_name":"Computer Science",
+      "topic_id":"cs" 
+   },
+   {
+      "topic_name":"Economics",
+      "topic_id":"econ"
+   },
+   {
+      "topic_name":"Electrical Engineering and Systems Science",
+      "topic_id":"eess"
+   },
+   {
+      "topic_name":"Mathematics ",
+      "topic_id":"math"
+   },
+   {
+      "topic_name":"Physics",
+      "topic_id":"physics"
+   },
+   {
+      "topic_name":"Astrophysics",
+      "topic_id":"physics:astro-ph"
+   },
+   {
+      "topic_name":"Condensed Matter",
+      "topic_id":"physics:cond-mat"
+   },
+   {
+      "topic_name":"General Relativity and Quantum Cosmology",
+      "topic_id":"physics:gr-qc"
+   },
+   {
+      "topic_name":"High Energy Physics - Experiment",
+      "topic_id":"physics:hep-ex"
+   },
+   {
+      "topic_name":"High Energy Physics - Lattice",
+      "topic_id":"physics:hep-lat"
+   },
+   {
+      "topic_name":"High Energy Physics - Phenomenology",
+      "topic_id":"physics:hep-ph"
+   },
+   {
+      "topic_name":"High Energy Physics - Theory",
+      "topic_id":"physics:hep-th"
+   },
+   {
+      "topic_name":"Mathematical Physics",
+      "topic_id":"physics:math-ph"
+   },
+   {
+      "topic_name":"Nonlinear Sciences",
+      "topic_id":"physics:nlin"
+   },
+   {
+      "topic_name":"Nuclear Experiment",
+      "topic_id":"physics:nucl-ex"
+   },
+   {
+      "topic_name":"Nuclear Theory",
+      "topic_id":"physics:nucl-th"
+   },
+   {
+      "topic_name":"Quantum Physics",
+      "topic_id":"physics:quant-ph"
+   },
+   {
+      "topic_name":"Quantitative Biology",
+      "topic_id":"q-bio"
+   },
+   {
+      "topic_name":"Quantitative Finance",
+      "topic_id":"q-fin"
+   },
+   {
+      "topic_name":"Statistics",
+      "topic_id":"stat"
+   }
+]
