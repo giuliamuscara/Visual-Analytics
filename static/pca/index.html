@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+  <script src="https://d3js.org/d3.v4.js"></script>
+  <script type="text/javascript" src="my_kmeans.js"></script>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js" charset="utf-8"></script> -->
+  <link type="text/css" rel="stylesheet" href="my_kmeans.css">
+  <link rel="shortcut icon" href="#">
+</head>
+
+<body>
+    <h2>K-means on PCA</h2>
+    <div id="kmeans" class="kmeans-chart"></div>
+</body>
+
+<script type="text/javascript">kMeans("#kmeans", 500, 400, 20, 10);</script> 
+<!-- bisogna passare la lista dei selected topics!!! -->
+
+<!-- <script>
+
+    // set the dimensions and margins of the graph
+    var margin = {top: 10, right: 30, bottom: 30, left: 30},
+        width = 460 - margin.left - margin.right,
+        height = 400 - margin.top - margin.bottom;
+    
+    // append the svg object to the body of the page
+    var svg = d3.select("#kmeans")
+      .append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+      .append("g")
+        .attr("transform",
+              "translate(" + margin.left + "," + margin.top + ")");
+    // Add X axis
+    var x = d3.scaleLinear()
+        .domain([-8, 10])
+        .range([0, width]);
+    svg.append("g")
+      .attr("transform", "translate(0," + height + ")")
+      .call(d3.axisBottom(x));
+    
+    // Add Y axis
+    var y = d3.scaleLinear()
+      .domain([-6, 6])
+      .range([height, 0]);
+    svg.append("g")
+      .call(d3.axisLeft(y));
+  
+    //Read the data
+    d3.csv("pca_kmeans_result.csv", function(data) {
+    
+      // Add dots
+      svg.append('g')
+        .selectAll("dot")
+        .data(data)
+        .enter()
+        .append("circle")
+          .attr("cx", function (d) { return x(d.x); } )
+          .attr("cy", function (d) { return y(d.y); } )
+          .attr("r", 2.5)
+          .style("fill", "green")
+    
+    })
+    
+</script> -->
+
