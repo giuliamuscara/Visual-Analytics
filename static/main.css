@@ -1,0 +1,153 @@
+/* custom css */
+
+
+
+#container_graph_1, #container_graph_2, #container_graph_3, #container_graph_4{
+    color: white;
+}
+
+/*Per il gruppo di linee*/
+.axis--x path {
+    /*display: none;*/
+}
+
+.axis--y path {
+    /*display: none;*/
+}
+
+.line {
+    fill: none;
+    stroke-width: 1.5px;
+}
+
+.grid line {
+    stroke: lightgrey;
+    stroke-opacity: 0.7;
+    shape-rendering: crispEdges;
+}
+
+.grid path {
+    stroke-width: 0;
+}
+
+
+
+
+/*Tooltip*/
+div.tooltip-donut {
+    position: absolute;
+    text-align: center;
+    padding: .5rem;
+    background: #FFFFFF;
+    color: #313639;
+    border: 1px solid #313639;
+    border-radius: 8px;
+    pointer-events: none;
+    font-size: 1.3rem;
+}
+
+
+
+
+
+body {
+    font: 12px sans-serif;
+    font-weight: bold;
+    background-color: darkgrey;
+}
+
+#my_svg {
+    /*margin-top: 13pt;*/
+}
+
+.x,
+.y {
+    stroke: white;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+.tick {
+    stroke: white;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+.axis line,
+.axis path {
+    fill: none;
+    stroke: white;
+    shape-rendering: geometricPrecision;
+    position: relative;
+}
+
+body {
+    display: grid;
+    grid-template-areas: "nav header" "nav article";
+    grid-template-rows: 75px 1fr;
+    grid-template-columns: 19% 1fr;
+    grid-row-gap: 4px;
+    grid-column-gap: 3px;
+    height: 100vh;
+    margin: 0;
+}
+
+header,
+footer,
+article,
+nav,
+div {
+    /*padding: 0.2em;*/
+    /*background: yellowgreen;*/
+}
+
+#pageHeader {
+    background: #2c2c2c;
+    grid-area: header;
+}
+
+#pageFooter {
+    grid-area: footer;
+}
+
+#mainArticle {
+    grid-area: article;
+}
+
+#mainNav {
+    color: darkgrey;
+    grid-area: nav;
+}
+
+#siteAds {
+    grid-area: ads;
+}
+
+
+/* Stack the layout on small devices/viewports. */
+
+@media all and (max-width: 575px) {
+    body {
+        grid-template-areas: "header" "article" "nav";
+        grid-template-rows: 80px 1fr 70px 1fr 70px;
+        grid-template-columns: 1fr;
+    }
+}
+
+#inner-grid {
+    height: 88.5vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+}
+
+#inner-grid>div {
+    background: #2c2c2c;
+    padding: 8px;
+}
+
+#graphic {
+    height: 45.2vh;
+    /*height: 40vh;*/
+    width: 100%
+}

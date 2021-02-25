@@ -1,0 +1,86 @@
+/*CHECKBOXES*/
+
+#checkboxes_container {
+    padding: 1.2vh;
+    height: 62%;
+    width: 100%;
+    margin-bottom: 4%;
+    background: #2c2c2c;
+}
+
+#project_title{
+    margin-bottom: 4px;
+    height: 8.4%;
+    background: #2c2c2c;
+    width: 100%;
+}
+
+#legend_container {
+    height: 29%;
+    width: 100%;
+    background: #2c2c2c;
+}
+
+#main_nav_container{
+    height: 90.9%;
+    width: 100%;
+    background: #2c2c2c;
+}
+
+.pretty {
+    margin-bottom: 7pt;
+}
+
+
+/*LEGEND*/
+
+.legend-labels {
+    width: 96%;
+}
+
+.my-legend .legend-title {
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    /*font-size: 100%;*/
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 2vh;
+}
+
+.my-legend .legend-scale ul {
+    margin: 3pt;
+    margin-bottom: 5px;
+    padding: 0;
+    float: left;
+    list-style: none;
+}
+
+.my-legend .legend-scale ul li {
+    /*font-size: 80%;*/
+    font-size: 100%;
+    list-style: none;
+    margin-left: 0;
+    line-height: 18px;
+    margin-bottom: 2px;
+}
+
+.my-legend ul.legend-labels li span {
+    display: block;
+    float: left;
+    height: 16px;
+    width: 30px;
+    margin-right: 5px;
+    margin-left: 0;
+    border: 1px solid #999;
+}
+
+.my-legend .legend-source {
+    font-size: 70%;
+    color: #999;
+    clear: both;
+}
+
+.my-legend text{
+    color: darkgrey;
+}
