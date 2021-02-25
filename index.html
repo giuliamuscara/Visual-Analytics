@@ -1,0 +1,77 @@
+<!doctype html>
+<title>ArXiv Bibliometric analysis</title>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href={{ url_for( 'static', filename='./bower_components/bootstrap/dist/css/bootstrap.min.css' ) }} rel="stylesheet" media="screen">
+    <link href={{ url_for( 'static', filename='main.css' ) }} rel="stylesheet" media="screen">
+    <!-- <link href={{ url_for( 'static', filename='./PCA/my_kmeans.css' ) }} rel="stylesheet" media="screen"> -->
+    <link href={{ url_for( 'static', filename='left_side.css' ) }} rel="stylesheet" media="screen">
+    <link href={{ url_for( 'static', filename='pretty-checkbox.css' ) }} rel="stylesheet" media="screen">  <!-- Custom checkbox-->
+    <!-- Load the Font Awesome Library via CDN -->
+    <!-- <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css" media="all" rel="stylesheet" type="text/css"> </head> -->
+    <link href={{ url_for( 'static', filename='font-awesome.min.css' ) }} rel="stylesheet" media="screen">
+    <!-- <link href="https://requirejs.org/docs/release/2.3.5/minified/require.js"> -->
+   
+</head>
+<body>
+    <header id="pageHeader">
+      <div id="brush_container"></div>
+    </header>
+    <article id="mainArticle">
+        <div id="inner-grid">
+            <div id="graphic">
+                <div id="container_graph_1"></div>
+            </div>
+            <div id="graphic">
+                <div id="container_graph_2"></div>
+                
+            </div>
+            <div id="graphic">
+                <div id="container_graph_3"></div>
+                
+                
+            </div>
+            <div id="graphic">
+                <div id="container_graph_4"></div>
+            </div>
+        </div>
+    </article>
+    <nav id="mainNav">
+        <div id="project_title" style="color: white;">
+            <br><br>
+            <center><big class="project_title"></big></center>
+        </div>
+        <div id="main_nav_container">
+            <div id="legend_container">
+                <div class='my-legend'>
+                    <div class='legend-title'>Legend</div>
+                    <div class='legend-scale'>
+                        <ul class='legend-labels' id='legend-labels'>
+                            
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="count_labels">
+                    <strong id="total_count_label"></strong><br/>
+                    <strong id="total_published_label"></strong><br/>
+                    <strong id="total_pre_print_less_label"></strong><br/>
+                    <strong id="total_pre_print_greater_label"></strong>
+                </div>
+            </div>
+            <div id="checkboxes_container">
+                <!-- Qua ci stanno i checkboxes -->
+            </div>
+        </div>
+        
+    </nav>
+    <script src={{ url_for( 'static', filename='./bower_components/jquery/dist/jquery.min.js' ) }}></script>
+    <script src={{ url_for( 'static', filename='./bower_components/bootstrap/dist/js/bootstrap.min.js' ) }}></script>
+    <script src={{ url_for( 'static', filename='./bower_components/d3/d3.js' ) }}></script>
+        <!-- <script src="https://d3js.org/d3.v5.min.js"></script> -->
+    <script src={{ url_for( 'static', filename='./PCA/my_kmeans.js' ) }}></script>
+    <script src={{ url_for( 'static', filename='main.js' ) }}></script>
+    <script src={{ url_for( 'static', filename='globals.js' ) }}></script>
+    <!-- è diverso da d3.min.js-->
+</body>
